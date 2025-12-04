@@ -1,0 +1,30 @@
+{
+    "name": "zitra-resume-backend",
+    "version": "1.0.0",
+    "description": "Backend API for Zitra resume submission",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "nodemon server.js"
+    },
+    "keywords": [
+        "resume",
+        "api",
+        "email"
+    ],
+    "author": "Zitra",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.18.2",
+        "multer": "^1.4.5-lts.1",
+        "nodemailer": "^6.9.7",
+        "cors": "^2.8.5",
+        "express-rate-limit": "^7.1.5"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.2"
+    },
+    "engines": {
+        "node": ">=18.x"
+    }
+}
