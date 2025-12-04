@@ -180,8 +180,8 @@ app.post('/api/submit-resume', limiter, upload.single('resume'), async (req, res
               <h1>Thank You for Your Application!</h1>
             </div>
             <div class="content">
-              <p>Dear ${firstName} ${surname},</p>
-              <p>We have successfully received your application for the <strong>${position}</strong> position. Our team will review your qualifications and get back to you soon.</p>
+              <p>Hello ${firstName},</p>
+              <p>We have successfully received your application for the <strong>${position}</strong> position. Our team will review your qualifications and get back to you soon. If you are yet to download the Zitra Ease app, please do that now - https://zitra.to/app</p>
               <p>If you have any questions, feel free to reach out to us.</p>
               <p>Best regards,<br>The Zitra Team</p>
             </div>
