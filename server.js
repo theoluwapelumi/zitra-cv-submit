@@ -68,7 +68,7 @@ app.get('/api/health', (req, res) => {
 // Resume submission endpoint
 app.post('/api/submit-resume', limiter, upload.single('resume'), async (req, res) => {
     try {
-        const { surname, firstName, email, phone, position, linkedin } = req.body;
+        const { surname, firstName, email, phone, position, linkedin, zitraEaseChange } = req.body;
         const resume = req.file;
 
         // Validate required fields
@@ -129,6 +129,11 @@ app.post('/api/submit-resume', limiter, upload.single('resume'), async (req, res
               <span class="label">LinkedIn:</span>
               <span class="value">${linkedin || 'Not provided'}</span>
             </div>
+            <div class="field">
+              <span class="label">What would you change about Zitra Ease?:</span>
+              <span class="value">${zitraEaseChange || 'Not provided'}</span>
+            </div>
+
             <div class="field">
               <span class="label">Resume:</span>
               <span class="value">${resume.originalname} (${(resume.size / 1024).toFixed(2)} KB)</span>
